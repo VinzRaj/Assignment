@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthly Expense Report</title>
+  </head>
+  <body>
+    <h2>Monthly Expense Report</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="name">Name:</label>
+            </td>
+            <td>
+              <input type="text" name="name" placeholder="Enter name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="address">Address:</label>
+            </td>
+            <td>
+              <textarea name="address" id="add" cols="20" rows="4">
+5833 W forest view County, unit H</textarea
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="country">Country:</label>
+            </td>
+            <td>
+              <select name="countryselection" id="country">
+                <option value="select">select</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="as">Australia</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="cnumber">Contact Number:</label>
+            </td>
+            <td>
+              <input type="text" name="cnumber" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label name="email" id="email"> Email Id:</label>
+            </td>
+            <td><input type="email" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label name="dob" id="dob"> DOB:</label>
+            </td>
+            <td><input type="date" /></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label name="age" id="age"> Age:</label>
+            </td>
+            <td><input type="number" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Expense Information</legend>
+        <table>
+          <tr>
+            <td><label id="expsDate" name="expsDate">Date:</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label id="mortgage" name="mortgage">Mortgage:</label></td>
+            <td><input type="text" id="mortgage" name="mortgage" /></td>
+          </tr>
+          <tr>
+            <td><label id="gas" name="gas">Gas:</label></td>
+            <td><input type="text" id="gas" name="gas" /></td>
+          </tr>
+          <tr>
+            <td><label id="childCare" name="childCare">ChildCare:</label></td>
+            <td><input type="text" id="childCare" name="childCare" /></td>
+          </tr>
+          <tr>
+            <td><label id="insurance" name="insurance">Insurance:</label></td>
+            <td><input type="text" id="insurance" name="insurance" /></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" id="expsType1" name="expsType" />
+              <label id="monthly" name="monthly">Monthly:</label>
+            </td>
+            <td>
+              <input type="radio" id="expsType2" name="expsType" />
+              <label id="yearly" name="yearly">Yearly:</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label id="misc" name="misc">Misc:</label></td>
+            <td><input type="text" id="misc" name="misc" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <br />
+      <button type="submit" onclick="alert('Submitted Sucessfully')">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
